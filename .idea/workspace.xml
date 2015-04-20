@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f39dad5e-5928-4e01-8139-8e72a306e21b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/lmv-projects.js" afterPath="$PROJECT_DIR$/server/lmv-projects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/main.js" afterPath="$PROJECT_DIR$/www/main.js" />
     </list>
     <ignored path="workflow-node.js-host-view.and.data.api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,15 +26,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lmv-projects.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/lmv-projects.js">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24972376" vertical-offset="420" max-vertical-offset="1887">
-              <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#1132#1379#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.15469614" vertical-offset="1866" max-vertical-offset="3179">
+              <caret line="137" column="64" selection-start-line="137" selection-start-column="64" selection-end-line="137" selection-end-column="64" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,13 +46,13 @@
       <list>
         <option value="$PROJECT_DIR$/server/lmv.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/www/main.js" />
         <option value="$PROJECT_DIR$/www/style.css" />
         <option value="$PROJECT_DIR$/www/images/.gitignore" />
         <option value="$PROJECT_DIR$/www/js/flipclock.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/start.js" />
         <option value="$PROJECT_DIR$/server/lmv-projects.js" />
+        <option value="$PROJECT_DIR$/www/main.js" />
       </list>
     </option>
   </component>
@@ -64,8 +60,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="474" />
-    <option name="y" value="26" />
+    <option name="x" value="704" />
+    <option name="y" value="109" />
     <option name="width" value="1536" />
     <option name="height" value="1064" />
   </component>
@@ -264,7 +260,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="474" y="26" width="1536" height="1064" extended-state="0" />
+    <frame x="704" y="109" width="1536" height="1064" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -350,9 +346,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2035" max-vertical-offset="2567">
           <caret line="140" column="12" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -360,16 +354,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13957307" vertical-offset="0" max-vertical-offset="697">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="3502">
-          <caret line="124" column="21" selection-start-line="124" selection-start-column="21" selection-end-line="124" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -460,6 +444,14 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#1132#1379#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15469614" vertical-offset="1866" max-vertical-offset="3179">
+          <caret line="137" column="64" selection-start-line="137" selection-start-column="64" selection-end-line="137" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>

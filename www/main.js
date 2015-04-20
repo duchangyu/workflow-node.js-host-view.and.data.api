@@ -135,7 +135,7 @@ function HostSetupTranslated (data) {
 		var id =data [i].urn.replace (/=+/g, '') ;
 		$('#translated').append ('<div class="list-group-item" id="' + id + '">'
 			+ '<span>' + data [i].item + '</span>'
-			+ '<span>' + data [i].urn + '</span>'
+			+ '<input type="text" value="' + data [i].urn + '" />'
 			+ '</div>') ;
 	}
 }
@@ -182,7 +182,7 @@ function translateProgress (urn) {
 			$('#' + id).remove () ;
 			$('#translated').append ('<div class="list-group-item" id="' + id + '">'
 				+ '<span>' + response.children [0].name + '</span>'
-				+ '<span>' + response.urn + '</span>'
+				+ '<input type="text" value="' + response.urn + '" />'
 				+ '</div>') ;
 		} else {
 			$('#' + id + ' progress').val (parseInt (response.progress)) ;
