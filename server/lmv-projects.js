@@ -45,9 +45,9 @@ router.post ('/translate', function (req, res) {
 	var accessToken =req.body.accessToken ;
 	var filename =req.body.file ;
 	var bucket =
-		  'model-test';
-	//	+ new Date ().toISOString ().replace (/T/, '-').replace (/:+/g, '-').replace (/\..+/, '')
-	//	+ '-' + accessToken.access_token.toLowerCase ().replace (/\W+/g, '') ;
+		  'model'
+		+ new Date ().toISOString ().replace (/T/, '-').replace (/:+/g, '-').replace (/\..+/, '')
+		+ '-' + accessToken.access_token.toLowerCase ().replace (/\W+/g, '') ;
 	var policy ='transient' ;
 
 	async.waterfall ([
