@@ -133,9 +133,9 @@ function HostResetAccessToken () {
 function HostSetupTranslated (data) {
 	for ( var i =0 ; i < data.length ; i++ ) {
 		var id =data [i].urn.replace (/=+/g, '') ;
-		$('#translated').append ('<div class="list-group-item" id="' + id + '">'
-			+ '<span>' + data [i].item + '</span>'
-			+ '<input type="text" value="' + data [i].urn + '" />'
+		$('#translated').append ('<div class="list-group-item row" id="' + id + '">'
+			+ '<div class="col-md-4">' + data [i].item + '</div>'
+			+ '<div class="col-md-8"><input type="text" class="form-control" value="' + data [i].urn + '" readonly="true" /></div>'
 			+ '</div>') ;
 	}
 }
@@ -180,9 +180,9 @@ function translateProgress (urn) {
 		var id =response.urn.replace (/=+/g, '') ;
 		if ( response.progress == 'complete' ) {
 			$('#' + id).remove () ;
-			$('#translated').append ('<div class="list-group-item" id="' + id + '">'
-				+ '<span>' + response.children [0].name + '</span>'
-				+ '<input type="text" value="' + response.urn + '" />'
+			$('#translated').append ('<div class="list-group-item row" id="' + id + '">'
+				+ '<div class="col-md-4">' + response.children [0].name + '</div>'
+				+ '<div class="col-md-8"><input type="text" class="form-control" value="' + response.urn + '" readonly="true" /></div>'
 				+ '</div>') ;
 		} else {
 			$('#' + id + ' progress').val (parseInt (response.progress)) ;
