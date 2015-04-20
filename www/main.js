@@ -133,10 +133,7 @@ function HostResetAccessToken () {
 function HostSetupTranslated (data) {
 	for ( var i =0 ; i < data.length ; i++ ) {
 		var id =data [i].urn.replace (/=+/g, '') ;
-		$('#translated').append ('<div class="list-group-item row" id="' + id + '">'
-			+ '<div class="col-md-4">' + data [i].item + '</div>'
-			+ '<div class="col-md-8"><input type="text" class="form-control" value="' + data [i].urn + '" readonly="true" /></div>'
-			+ '</div>') ;
+		translatedItem (id, data [i].item, data [i].urn) ;
 	}
 }
 
@@ -180,10 +177,7 @@ function translateProgress (urn) {
 		var id =response.urn.replace (/=+/g, '') ;
 		if ( response.progress == 'complete' ) {
 			$('#' + id).remove () ;
-			$('#translated').append ('<div class="list-group-item row" id="' + id + '">'
-				+ '<div class="col-md-4">' + response.children [0].name + '</div>'
-				+ '<div class="col-md-8"><input type="text" class="form-control" value="' + response.urn + '" readonly="true" /></div>'
-				+ '</div>') ;
+			translatedItem (id, response.children [0].name, response.urn) ;
 		} else {
 			$('#' + id + ' progress').val (parseInt (response.progress)) ;
 			setTimeout (function () { translateProgress (urn) ; }, 500) ;
@@ -199,3 +193,17 @@ function translateProgress (urn) {
 			+ '</div>') ;
 	}) ;
 } ;
+
+function translatedItem (id, name, urn) {
+	$('#translated').append ('<div class="list-group-item row" id="' + id + '">'
+		+ '<div class="col-md-3">' + name + '</div>'
+		+ '<div class="col-md-8">'
+		+ '<input type="text" class="form-control" value="' + urn + '" readonly="true" />'
+		+ '</div>'
+		+ '<div class="col-md-1">'
+		+ '<button class="form-control copy" data-clipboard-text="' + urn + '" title="Copy the URN to clipboard"><img src="/images/copy.png" /></button>'
+		+ '</div>'
+	) ;
+	var client =new ZeroClipboard ($('#' + id + ' div button.copy')) ;
+}
+

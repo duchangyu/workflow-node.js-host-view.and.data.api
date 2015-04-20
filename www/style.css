@@ -31,6 +31,16 @@ footer {
 	float: left;
 	margin-right: 20px;
 }
+.copy {
+	width: 32px;
+	height: 32px;
+}
+.copy img {
+	margin-top: -2px;
+	margin-left: -8px;
+	width: 24px;
+	height: 24px;
+}
 .divForBtnGetAccessToken {
 	width: 100%;
 	margin: 20px;
