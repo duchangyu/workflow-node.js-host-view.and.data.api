@@ -1,0 +1,36 @@
+{
+	"name": "AdnNodeJsHostSample",
+	"description": "A node.js server sample",
+	"version": "1.0.0",
+	"dependencies": {
+		"serve-favicon": ">= 0.0.2",
+		"express": ">= 4.12.3",
+		"request": ">= 2.55.0",
+        "connect-multiparty": ">= 1.2.5",
+        "body-parser": ">= 1.11.0",
+		"fs": ">= 0.0.2",
+		"unirest": ">= 0.4.0",
+		"util": ">= 0.10.3",
+		"path": ">=0.11.14",
+		"async": ">= 0.9.0"
+	},
+	"files": [
+		"LICENSE",
+		"README.md"
+	],
+	"engines": {
+		"node": ">= 0.10.0"
+	},
+	"contributors": [
+		"Cyrille Fauvel <cyrille@autodesk.com>"
+	],
+	"license": "MIT",
+	
+	"scripts": {
+		"start": "node start.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cyrillef/workflow-node.js-host-view.and.data.api.git"
+	}
+}
