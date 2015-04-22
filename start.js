@@ -1,7 +1,7 @@
 //
 // Copyright (c) Autodesk, Inc. All rights reserved 
 //
-// Host Node.js server 
+// Node.js server Host
 // by Cyrille Fauvel - Autodesk Developer Network (ADN)
 // April 2015
 //
